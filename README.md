@@ -8,3 +8,4 @@ Collection of script/code tricks I like to think I've invented/discovered/master
 + /etc
 
 Useful for everything from lulz to world domination.
+See also: https://github.com/diemastermonkey/doors, https://github.com/diemastermonkey/iterator
