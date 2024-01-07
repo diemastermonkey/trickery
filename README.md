@@ -7,4 +7,4 @@ Collection of script/code tricks I like to think I've invented/discovered/master
 + Self-generating code
 + /etc
 
-Useful for all sorts of stuff from lulz to world domination.
+Useful for everything from lulz to world domination.
