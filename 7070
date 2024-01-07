@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+# Prints HAHA 
+# gad/2023
+
+import re   # In case ./7070
+import sys
+
+sN = sys.argv[0]
+sN = re.sub(r'\D', '', sN)  # \d only
+
+for cC in sN:
+  print (chr(int(cC)+65))
+
+# Fin
