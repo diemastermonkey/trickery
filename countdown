@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+# Simple countdown / gad23
+
+COUNT=50
+[ -n "$1" ] && COUNT="$1"  # Use arg if provided
+
+while [ $COUNT -gt 0 ]
+do
+  printf "  Count down: %s    \r" $COUNT
+  COUNT=$(($COUNT-1))
+  sleep 0.1
+done
