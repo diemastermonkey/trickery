@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+# Answers yes/no questions consistently
+# Demonstrates an interesting aspect of procedural generation
+# by using the query itself as part of the seed
+# unhacker@gmail.com
+
+import sys, base64, random
+
+if (len(sys.argv) < 2):
+  sys.exit (sys.argv[0] + " \"<yes or no question>\"")
+
+aNswers = ["Yes", "No"]
+random.seed(int.from_bytes(base64.b64encode(sys.argv[1].lower().encode()), byteorder='big'))
+print (aNswers[random.randint(0,1)])
+# Fin
