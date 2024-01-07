@@ -16,7 +16,7 @@ Useful for everything from lulz to world domination.
 # yesno 
 6 lines answers any question consistently with this one simple Procedural Generation trick
 
-# yesno: Example (quotes are required)
+yesno: Example (quotes are required)
 
 ./yesno "Am I cute?"
 
@@ -30,7 +30,7 @@ Useful for everything from lulz to world domination.
 
   No
   
-# yesno: Explanation
+yesno: Explanation
 
 Aside of handling input, this code does almost nothing!
 
@@ -49,6 +49,6 @@ PS: Rather than bothering with "if" statements, we just flip a coin to choose fr
   
   print (aNswers[random.randint(0,1)])
 
-# Disclaimer
-I like pineapple on pizza.
+Disclaimer
+I do like pineapple on pizza.
 
