@@ -61,9 +61,10 @@ This shell script embeds the entire MAC vendor database (about 50,000 lines) wit
 Examples:
 
 ./maclookup
-./maclookup usage:
 
-  ./maclookup <MAC address or first 3 bytes>
+maclookup usage:
+
+maclookup <MAC address or first 3 bytes>
 
 ./maclookup 00:15:5d:bb:74:ce
 
