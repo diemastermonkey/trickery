@@ -67,17 +67,17 @@ Examples:
 
 ./maclookup 00:15:5d:bb:74:ce
 
-  ./maclookup : Searching 50578 entries for MAC prefix: 00:15:5d
+  maclookup : Searching 50578 entries for MAC prefix: 00:15:5d
   
-  ./maclookup : Microsoft Corporation
+  maclookup : Microsoft Corporation
   
-  ./maclookup : End of line
+  maclookup : End of line
 
 
 ./maclookup 4001c6
 
-  ./maclookup : Searching 50578 entries for MAC prefix: 40:01:c6
+  maclookup : Searching 50578 entries for MAC prefix: 40:01:c6
   
-  ./maclookup : 3COM EUROPE LTD
+  maclookup : 3COM EUROPE LTD
   
-  ./maclookup : End of line
+  maclookup : End of line
