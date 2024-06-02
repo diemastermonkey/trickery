@@ -52,3 +52,26 @@ PS: Rather than bothering with "if" statements, we just flip a coin to choose fr
 Disclaimer
 I do like pineapple on pizza.
 
+# maclookup
+
+Identifying a device by its MAC address - it's A Hacker Thing. Usually you do a web search, but I wanted to 'have it handy'. 
+
+This shell script embeds the entire MAC vendor database (about 50,000 lines) within itself, and provides flexible search from the command line. It accepts full and partial MAC addresses and is very tolerant of formatting. Coming soon: Self-update database.
+
+Examples:
+
+./maclookup
+./maclookup usage:
+  ./maclookup <MAC address or first 3 bytes>
+
+./maclookup 00:15:5d:bb:74:ce
+
+./maclookup : Searching 50578 entries for MAC prefix: 00:15:5d
+./maclookup : Microsoft Corporation
+./maclookup : End of line
+
+./maclookup 4001c6
+
+./maclookup : Searching 50578 entries for MAC prefix: 40:01:c6
+./maclookup : 3COM EUROPE LTD
+./maclookup : End of line
