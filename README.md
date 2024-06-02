@@ -56,7 +56,7 @@ I do like pineapple on pizza.
 
 Identifying a device by its MAC address - it's A Hacker Thing. Usually you do a web search, but I wanted to 'have it handy'. 
 
-This shell script embeds the entire MAC vendor database (about 50,000 lines) within itself, and provides flexible search from the command line. It accepts full and partial MAC addresses and is very tolerant of formatting. Coming soon: Self-update database.
+This shell script embeds the entire MAC vendor database (about 50,000 lines) within itself, and provides flexible search from the command line. It accepts full or partial MAC addresses, and you can skip the colons in case someone's shouting a MAC address at you from across the room (it happens). Coming soon: Self-update database.
 
 Examples:
 
