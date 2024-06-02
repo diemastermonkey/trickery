@@ -96,3 +96,22 @@ A
 H
 
 A
+
+# Shell: countdown
+
+Do a simple countdown in shell, with default time or specify on command line.
+
+$ ./countdown
+
+Count down: 50
+(...)
+
+$ ./countdown 10
+
+Count down: 10
+(...)
+
+
+
+
+
