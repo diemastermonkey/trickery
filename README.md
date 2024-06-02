@@ -13,7 +13,7 @@ Useful for everything from lulz to world domination.
 
 # Discussion
 
-# yesno 
+# Python: yesno 
 6 lines answers any question consistently with this one simple Procedural Generation trick
 
 yesno: Example (quotes are required)
@@ -52,7 +52,7 @@ PS: Rather than bothering with "if" statements, we just flip a coin to choose fr
 Disclaimer
 I do like pineapple on pizza.
 
-# maclookup
+# Shell: maclookup
 
 Identifying a device by its MAC address - it's A Hacker Thing. Usually you do a web search, but I wanted to 'have it handy'. 
 
@@ -82,3 +82,17 @@ maclookup <MAC address or first 3 bytes>
   maclookup : 3COM EUROPE LTD
   
   maclookup : End of line
+
+# Python: 7070 (aka haha)
+
+File under "Obfuscation Techniques". 6 lines of Python print out 'haha', IF the filename is '7070'.
+
+$ ./7070
+
+H
+
+A
+
+H
+
+A
