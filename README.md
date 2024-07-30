@@ -16,7 +16,7 @@ Useful for everything from lulz to world domination.
 # Python: yesno 
 6 lines answers any question consistently with this one simple Procedural Generation trick
 
-yesno: Example (quotes are required)
+Example (quotes are required)
 
 ./yesno "Am I cute?"
 
@@ -30,18 +30,18 @@ yesno: Example (quotes are required)
 
   No
   
-yesno: Explanation
+Explanation
 
-Aside of handling input, this code does almost nothing!
+This code does almost nothing!
 
-This may be the lowest-effort method to generate random but consistent responses to arbitrary input: Using the input as part of seeding a Pseudo Random Number Generator (PRNG). Here, the user input is 1) converted to lowercase 2) base64 encoded and 3) converted to an integer that can be fed to random.seed. 
+Perhaps the lowest-effort method to generate seemingly random yet consistent responses to arbitrary input: Use the input in seeding a Pseudo Random Number Generator (PRNG). User input is 1) lowercased 2) base64 encoded and 3) converted to an integer fed to random.seed. In other words: 
 
   random.seed(int.from_bytes(base64.b64encode(sys.argv[1].lower().encode()), byteorder='big'))
 
-Seeded with value X, Python's PRNG will generate the same "random" values in the same order, every time.
-That means the same input string will produce the same answer always, forever. Kinda cool huh. The PRNG has an opinion on pineapple. ;)
+Seeded in this way, the PRNG will generate the same "random" values in the same order, every time.
+That means the same input string will produce the same answer always, forever. Kinda cool huh. This script has an opinion on pineapple. ;)
 
-PS: Rather than bothering with "if" statements, we just flip a coin to choose from the "aNswers" array. ;)
+PS: Rather than "if" statements, we simply flip a coin to choose from the "aNswers" array. ;)
 
   aNswers = ["Yes", "No"];
   
@@ -54,7 +54,7 @@ I DO like pineapple on pizza.
 
 # Shell: maclookup
 
-Identifying a device by its MAC address - it's A Hacker Thing. Usually you do a web search, but I wanted to 'have it handy'. 
+Identifying devices by MAC address - it's a Hacker Thing. Usually you do a web search, but I wanted to 'have it handy'. 
 
 This shell script embeds the entire MAC vendor database (about 50,000 lines) within itself, and provides flexible search from the command line. It accepts full or partial MAC addresses, and you can skip the colons in case someone's shouting a MAC address at you from across the room (it happens). Coming soon: Self-update database.
 
@@ -62,7 +62,7 @@ Examples:
 
 ./maclookup
 
-maclookup usage:
+Usage:
 
 maclookup <MAC address or first 3 bytes>
 
@@ -85,7 +85,7 @@ maclookup <MAC address or first 3 bytes>
 
 # ANSI C: gad-hotkeys.c
 
-Work in progress: A simple script utility in C to support 'hotkeys' for text menus. 
+Work in progress: Simple utility in C to support 'hotkeys' for scripts. 
 
 Run it with a list of your menu items as strings, and it will return the same list with one letter per item in camelCase. Display the new list to the user so they can select an item by single keystroke of the upper-case key. The code ensures each item has a unique hotkey assigned. If no unique hotkey is determined, that item is returned unmodified (i.e. no hotkey).
 
