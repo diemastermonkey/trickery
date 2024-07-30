@@ -51,7 +51,7 @@ PS: Rather than bothering with "if" statements, we just flip a coin to choose fr
   print (aNswers[random.randint(0,1)])
 
 Disclaimer
-I do like pineapple on pizza.
+I DO like pineapple on pizza.
 
 # Shell: maclookup
 
@@ -83,6 +83,14 @@ maclookup <MAC address or first 3 bytes>
   maclookup : 3COM EUROPE LTD
   
   maclookup : End of line
+
+# ANSI C: gad-hotkeys
+
+Work in progress: A simple script utility in C to support 'hotkeys' for text menus. 
+
+Run it with a list of your menu items as strings, and it will return the same list with one letter per item in camelCase. Display the new list to the user so they can select an item by single keystroke of the upper-case key. The code ensures each item has a unique hotkey assigned. If no unique hotkey is determined, that item is returned unmodified (i.e. no hotkey).
+
+Not yet implemented: Run it a second time passing the user's selected hotkey and the same menu listing. It will tell you which option they selected. This /could/ be done fairly easy in the script itself with some pattern matching, but I think this feature will be an easier workflow. Not yet written.
 
 # Python: 7070 (aka haha)
 
