@@ -1,5 +1,5 @@
 # trickery
-Collection of script/code tricks I like to think I've invented/discovered/mastered (none of that's true), such as:  
+Collection of script/code tools/tricks I like to think I've invented/discovered/mastered (none of that's true), such as:  
 
 + Procedural generation
 + Obfuscation
