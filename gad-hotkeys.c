@@ -30,10 +30,10 @@ char* sGHotkeys = NULL;
 // Appends to global assigned hotkeys
 // Returns the entire camelCased string
 char* fnMakeHotkey (char* sArg) { 
+  char cChar;	
   int iPos = 0;
   int iLoc = -1;
   int iLen = strlen(sArg); 
-  char cChar;
 
   // Iterate chars in sArg
   while (iPos < iLen) { 
