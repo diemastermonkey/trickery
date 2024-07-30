@@ -94,6 +94,7 @@ Run it with a list of your menu items as strings, and it will return the same li
 Not yet implemented: Run it a second time passing the user's selected hotkey and the same menu listing. It will tell you which option they selected. This /could/ be done fairly easy in the script itself with some pattern matching, but I think this feature will be an easier workflow. 
 
 Compile
+
 gcc gad-hotkeys.c -o gad-hotkeys
 
 Run
