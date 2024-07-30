@@ -84,7 +84,7 @@ maclookup <MAC address or first 3 bytes>
   
   maclookup : End of line
 
-# ANSI C: gad-hotkeys
+# ANSI C: gad-hotkeys.c
 
 Work in progress: A simple script utility in C to support 'hotkeys' for text menus. 
 
