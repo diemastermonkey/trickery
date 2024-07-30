@@ -1,0 +1,39 @@
+# Compile
+gcc gad-hotkeys.c -o gad-hotkeys
+
+# Run
+
+./gad-hotkeys dog dude frog frame rug pug couch cone bone strong
+
+Dog
+dUde
+Frog
+fRame
+ruG
+Pug
+Couch
+cOne
+Bone
+Strong
+
+# Notes
+
+/* gad-hotkeys: Hotkey helper for CLI stuff                      
+ * Generate and handle hotkeys for menus, etc                    
+ * unhacker@gmail.com 2024                                       
+ *                                                               
+ * 1. Run once with list of items. Returns hotkeyed version.     
+ * 2. Run again with selected char first, then the same list     
+ *    ...it returns which item user must have selected.          
+ *                                                               
+ * Ex: Return provided list with one char per item CamelCased    
+ *                                                               
+ *    Input:  gad-hotkeys <owls oaks toads toes [...]>           
+ *    Output: Owls oAks Toads toEs                               
+ *                                                               
+ * Ex: Report which item was selected, assuming our lists        
+ *                                                               
+ *    Input:  gad-hotkeys <T owls oaks toads toes [...]>         
+ *    Output: toads                                              
+ *                                                               
+*/     
