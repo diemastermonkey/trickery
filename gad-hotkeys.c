@@ -38,7 +38,7 @@ char* fnMakeHotkey (char* sArg) {
   // Iterate chars in sArg
   while (iPos < iLen) { 
     cChar = sArg[iPos];
-    // If char found in hotkeys
+    // If char not in hotkeys
     if (strchr (sGHotkeys, cChar) == NULL) { 
       strcat (sGHotkeys, &cChar); // Add to hotkeys
       cChar = toupper (cChar);    // Rudely UC hotkey
