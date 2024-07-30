@@ -1,6 +1,7 @@
 # trickery
 Collection of script/code tools/tricks I like to think I've invented/discovered/mastered (none of that's true), such as:  
 
++ Utilities for scripts
 + Procedural generation
 + Obfuscation
 + Self-modifying code
