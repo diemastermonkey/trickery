@@ -34,7 +34,9 @@ Explanation
 
 This code does almost nothing!
 
-Perhaps the lowest-effort method to generate seemingly random yet consistent responses to arbitrary input: Use the input in seeding a Pseudo Random Number Generator (PRNG). User input is 1) lowercased 2) base64 encoded and 3) converted to an integer fed to random.seed. In other words: 
+Perhaps the lowest-effort method to generate seemingly random yet consistent responses to arbitrary input: Use the input in seeding a Pseudo Random Number Generator (PRNG). User input is 1) lowercased 2) base64 encoded and 3) converted to an integer fed to random.seed. 
+
+In other words: 
 
   random.seed(int.from_bytes(base64.b64encode(sys.argv[1].lower().encode()), byteorder='big'))
 
