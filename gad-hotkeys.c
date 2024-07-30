@@ -41,12 +41,12 @@ char* fnMakeHotkey (char* sArg) {
     // If char found in hotkeys
     if (strchr (sGHotkeys, cChar) == NULL) { 
       strcat (sGHotkeys, &cChar); // Add to hotkeys
-	  cChar = toupper (cChar);    // Rudely UC hotkey
-	  sArg[iPos] = cChar;
-	  iPos = iLen;                // Rudely end loop
-	}
-
-	iPos++;            // Next char
+      cChar = toupper (cChar);    // Rudely UC hotkey
+      sArg[iPos] = cChar;
+      iPos = iLen;                // Rudely end loop
+    }
+	  
+    iPos++;            // Next char
   }                    // End while
 
   return (sArg);       // Return modified string
