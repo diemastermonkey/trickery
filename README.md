@@ -4,8 +4,7 @@ Collection of script/code tools/tricks I like to think I've invented/discovered/
 + Utilities for scripts
 + Procedural generation
 + Obfuscation
-+ Self-modifying code
-+ Self-generating code
++ Self-modifying or self-generating code
 + /etc
 
 Useful for everything from lulz to world domination.
