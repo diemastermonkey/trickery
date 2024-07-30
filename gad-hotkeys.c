@@ -56,13 +56,13 @@ char* fnMakeHotkey (char* sArg) {
 void main (int argc, char* argv[]) {
   if (argc < 2) {
     printf ("%s <string [string...]>\n", argv[0]);
-	exit(0);
+    exit(0);
   }
 
   // Allocate one char per item (except argv[0]) + 1
   sGHotkeys = malloc (argc); 
   if (! sGHotkeys) { 
-	printf ("%s malloc fail. Aborted.\n", argv[0]);
+    printf ("%s malloc fail. Aborted.\n", argv[0]);
     exit(-1);
   }
 
