@@ -15,7 +15,6 @@
  *
  *    Input:  gad-hotkeys <T owls oaks toads toes [...]>
  *    Output: toads
- *
 */
 
 #include <ctype.h>       // For toupper()
@@ -40,10 +39,9 @@ char* fnMakeHotkey (char* sArg) {
     cChar = sArg[iPos];
     // If char not in hotkeys
     if (strchr (sGHotkeys, cChar) == NULL) { 
-      strcat (sGHotkeys, &cChar); // Add to hotkeys
-      cChar = toupper (cChar);    // Rudely UC hotkey
-      sArg[iPos] = cChar;
-      iPos = iLen;                // Rudely end loop
+      strcat (sGHotkeys, &cChar);   // Add to hotkeys
+      sArg[iPos] = toupper (cChar); // Rudely UC hotkey
+      break;                        // Rudely end loop
     }
 	  
     iPos++;            // Next char
@@ -55,7 +53,7 @@ char* fnMakeHotkey (char* sArg) {
 // Main
 void main (int argc, char* argv[]) {
   if (argc < 2) {
-    printf ("%s <string [string...]>\n", argv[0]);
+    printf ("%s <[char] string [string...]>\n", argv[0]);
     exit(0);
   }
 
@@ -70,8 +68,5 @@ void main (int argc, char* argv[]) {
   for (int i=1; i < argc; i++) { 
     printf ("%s\n", fnMakeHotkey (argv[i]));
   }
-  
-  // printf ("\nHotkeys: %s", sGHotkeys);
-  
 } // End main
 
