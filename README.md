@@ -1,10 +1,11 @@
 # Trickery
 Collection of script/code tools/tricks I like to think I've invented/discovered/mastered (none of that's true):  
 
-+ Utilities for scripts
++ Useful bits of code for weird scripts
++ Self-modifying / self-generating code
++ All forms of polyglotism
 + Procedural generation
 + Obfuscation
-+ Self-modifying / self-generating code
 + /etc
 
 Useful for everything from lulz to world domination.
