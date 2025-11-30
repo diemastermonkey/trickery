@@ -22,7 +22,7 @@ Demonstrated
 
 $ cat self.py
 
-from random import*;seed(__file__);print(randint(0,64))
+from random import*; seed(__file__); print(randint(0,64))
 
 $ python3 self.py
 
