@@ -14,13 +14,25 @@ Useful for everything from lulz to world domination.
 # Discussion
 
 # Python (WSL): self.py
-TEXT HERE
+Using the filename as the seed for a PRNG is a favorite of mine, and it exhibits an interesting quirk under WSL due to its case-sensitivity. Running this code under different names produces different results, even while the actual file remains unchanged. That could be very handy.
 
-Example (quotes are required)
-TEXT
+Interesting side-note: I don't know why "from random import*" is acceptable, but it is. Could that bypass a regex some time?
 
-Explanation
-TEXT
+Demonstrated
+$ cat self.py
+from random import*;seed(__file__);print(randint(0,64))
+
+$ python3 self.py
+36
+
+$ python3 self.py
+36
+
+$ python3 SELF.py
+47
+
+$ python3 self.PY
+38
 
 # Python: yesno 
 6 lines answers any question consistently with this one simple Procedural Generation trick
