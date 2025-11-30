@@ -16,7 +16,7 @@ Useful for everything from lulz to world domination.
 # Python (WSL): self.py
 "Filename as PRNG seed" is a favorite trick, and it exhibits an interesting quirk under WSL's case-sensitivity. Running this code under different names produces different results, while the file remains unchanged. That could be very handy.
 
-Interesting side-note: I don't know why "from random import*" is acceptable, but it is. Could that bypass a regex some time?
+Interesting side-note: I don't know why "from random import*" is legal, but it is. Need to bypass a regex?
 
 Demonstrated
 ```
@@ -25,19 +25,15 @@ $ cat self.py
 from random import*; seed(__file__); print(randint(0,64))
 
 $ python3 self.py
-
 36
 
 $ python3 self.py
-
 36
 
 $ python3 SELF.py
-
 47
 
 $ python3 self.PY
-
 38
 ```
 
