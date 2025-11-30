@@ -37,7 +37,7 @@ $ python3 self.PY
 ```
 
 # Ansi C / Python: pysea.c / pysea.py
-An ANSI C and Python3 source code polyglot with instructions. This approach is well-loved in the community. I've jazzed it up here by cramming the C into ```#define```s as valid Python. Fun stuff. Note: I have a crapload of Polyglot-related materials in the pipeline, so if you're into that stay tuned.
+An ANSI C and Python3 source code polyglot with instructions. This approach is well-loved in the community. I've jazzed it up here by cramming the C into ```#defines``` as valid Python. Fun. I have a crapload of Polyglot-related materials in the pipeline, so if you're into that stay tuned.
 
 Demonstrated
 ```
