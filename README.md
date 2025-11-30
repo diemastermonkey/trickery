@@ -19,7 +19,7 @@ Useful for everything from lulz to world domination.
 Interesting side-note: I don't know why "from random import*" is acceptable, but it is. Could that bypass a regex some time?
 
 Demonstrated
-
+```
 $ cat self.py
 
 from random import*; seed(__file__); print(randint(0,64))
@@ -39,6 +39,7 @@ $ python3 SELF.py
 $ python3 self.PY
 
 38
+```
 
 # Python: yesno 
 6 lines answers any question consistently with this one simple Procedural Generation trick
