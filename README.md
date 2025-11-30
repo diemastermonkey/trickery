@@ -1,4 +1,4 @@
-# trickery
+# Trickery
 Collection of script/code tools/tricks I like to think I've invented/discovered/mastered (none of that's true):  
 
 + Utilities for scripts
@@ -35,6 +35,24 @@ $ python3 SELF.py
 
 $ python3 self.PY
 38
+```
+
+# Ansi C / Python: pysea.c / pysea.py
+An ANSI C and Python3 source code polyglot with instructions. This approach is well-loved in the community. I've jazzed it up here by cramming the C into ```#define```s as valid Python. Fun stuff. Note: I have a crapload of Polyglot-related materials in the pipeline, so if you're into that stay tuned.
+
+Demonstrated
+```
+$ file pysea.c
+pysea.c: C source, ASCII text
+
+$ python3 pysea.c
+Hello, world - Python
+gcc -o pysea pysea.c
+
+$ gcc -o pysea pysea.c
+$ ./pysea
+Hello, world - C.
+python3 ./pysea.c
 ```
 
 # Python: yesno 
