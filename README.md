@@ -13,6 +13,15 @@ Useful for everything from lulz to world domination.
 
 # Discussion
 
+# Python (WSL): self.py
+TEXT HERE
+
+Example (quotes are required)
+TEXT
+
+Explanation
+TEXT
+
 # Python: yesno 
 6 lines answers any question consistently with this one simple Procedural Generation trick
 
