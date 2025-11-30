@@ -14,7 +14,7 @@ Useful for everything from lulz to world domination.
 # Discussion
 
 # Python (WSL): self.py
-Using the filename as the seed for a PRNG is a favorite of mine, and it exhibits an interesting quirk under WSL due to its case-sensitivity. Running this code under different names produces different results, even while the actual file remains unchanged. That could be very handy.
+"Filename as PRNG seed" is a favorite trick, and it exhibits an interesting quirk under WSL's case-sensitivity. Running this code under different names produces different results, while the file remains unchanged. That could be very handy.
 
 Interesting side-note: I don't know why "from random import*" is acceptable, but it is. Could that bypass a regex some time?
 
